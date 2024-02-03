@@ -1,60 +1,160 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head>
-    <title>Welcome!</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <link rel="shortcut icon" href="/favicon.ico" />
-    <meta name="robots" content="noindex" />
-	<style type="text/css"><!--
-    body {
-        color: #444444;
-        background-color: #EEEEEE;
-        font-family: 'Trebuchet MS', sans-serif;
-        font-size: 80%;
-    }
-    h1 {}
-    h2 { font-size: 1.2em; }
-    #page{
-        background-color: #FFFFFF;
-        width: 60%;
-        margin: 24px auto;
-        padding: 12px;
-    }
-    #header{
-        padding: 6px ;
+<!doctype html>
+<html lang="en" class="h-100" data-bs-theme="auto">
+  <head><script src="/docs/5.3/assets/js/color-modes.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.118.2">
+    <title>Sticky Footer Navbar Template · Bootstrap v5.3</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/sticky-footer-navbar/">
+
+    
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+
+    <link href="css/styles.css" rel="stylesheet" />
+
+    <!-- Favicons -->
+<link rel="apple-touch-icon" href="/docs/5.3/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/docs/5.3/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/5.3/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/docs/5.3/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/docs/5.3/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
+<link rel="icon" href="/docs/5.3/assets/img/favicons/favicon.ico">
+<meta name="theme-color" content="#712cf9">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        width: 100%;
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
         text-align: center;
-    }
-    .header{ background-color: #0df365; color: #FFFFFF; }
-    #content {
-        padding: 4px 0 24px 0;
-    }
-    #footer {
-        color: #666666;
-        background: #f9f9f9;
-        padding: 10px 20px;
-        border-top: 5px #efefef solid;
-        font-size: 0.8em;
-        text-align: center;
-    }
-    #footer a {
-        color: #999999;
-    }
-    --></style>
-</head>
-<body>
-    <div id="page">
-        <div id="header" class="header">
-            <h1>Welcome to <!--ADRESSE//-->your website!<!--ADRESSE//--></h1>
-        </div>
-        <div id="content">
-            <h2>This is the default index page of your website, enjoy!</h2>
-            <p>This file may be deleted or overwritten without any difficulty. This is produced by the file <b>index.html</b> in the <b>web</b> directory.</p>
-            <p>For questions or problems please contact <!--SUPPORT//-->support<!--SUPPORT//-->.</p>
-        </div>
-        <div id="footer">
-            <p>Powered by <a href="https://www.ispconfig.org">ISPConfig</a></p>
-        </div>
-    </div>
-</body>
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .btn-bd-primary {
+        --bd-violet-bg: #712cf9;
+        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+        --bs-btn-font-weight: 600;
+        --bs-btn-color: var(--bs-white);
+        --bs-btn-bg: var(--bd-violet-bg);
+        --bs-btn-border-color: var(--bd-violet-bg);
+        --bs-btn-hover-color: var(--bs-white);
+        --bs-btn-hover-bg: #6528e0;
+        --bs-btn-hover-border-color: #6528e0;
+        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+        --bs-btn-active-color: var(--bs-btn-hover-color);
+        --bs-btn-active-bg: #5a23c8;
+        --bs-btn-active-border-color: #5a23c8;
+      }
+
+      .bd-mode-toggle {
+        z-index: 1500;
+      }
+
+      .bd-mode-toggle .dropdown-menu .active .bi {
+        display: block !important;
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="sticky-footer-navbar.css" rel="stylesheet">
+  </head>
+<body class="d-flex flex-column h-100"> 
+
+
+
+            
+        <header>
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container px-5">
+                <a class="navbar-brand" href="#!">Manic Web Services</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active disabled" aria-current="page" href="#!">Home</a></li>
+                        <li class="nav-item"><a class="nav-link disabled" href="#!">About</a></li>
+                        <li class="nav-item"><a class="nav-link disabled" href="#!">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link disabled" href="#!">Services</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        </header>
+
+        <!-- Begin page content -->
+        <main class="flex-shrink-0">
+            <div class="container px-4 px-lg-5">
+            
+                <div class="card text-white bg-danger my-5 py-4 text-center">
+                    <div class="card-body">
+                        <h2>Important Notice</h2>
+                        <p class="text-white m-0">It is with deep regret that this hosting service is now closing down as of August 2024.</p>
+                        <p>With this in mind we are no longer accepting any new clients and all current clients should now have received a email explaining the next steps.</p>
+                        <p>We would like to take the opertunity to thank you for your custom over the last few years, and wish you all the best in your future endevours.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </main>
+
+        <footer class="footer mt-auto py-3 bg-body-tertiary bg-dark">
+            <div class="container px-4 px-lg-5">
+                <p class="m-0 text-center text-white">Copyright &copy; manic-web-services 2010 - 2024</p>
+            </div>
+
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
 </html>
